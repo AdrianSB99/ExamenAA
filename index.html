@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tienda Online</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #F5F5F5;
+			margin: 0;
+			padding: 0;
+		}
+		
+		header {
+			background-color: #333;
+			color: #FFF;
+			padding: 10px;
+			text-align: center;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+            display: flex;
+		}
+		
+		.product {
+			background-color: #FFF;
+			border: 1px solid #DDD;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.product img {
+			max-width: 100%;
+		}
+		
+		h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		
+		p {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		
+		button {
+			background-color: #333;
+			color: #FFF;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+
+        .product:hover{
+            cursor: pointer;
+            opacity: 1;
+            scale: 110%;
+            transition: 1s;
+        }
+		
+		button:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		SB's Products
+	</header>
+	<div class="container">
+		<div class="product">
+			<img src="/1.jpg" alt="Teclado">
+			<h2>Teclado MAC</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, blanditiis?</p>
+			<button>Comprar</button>
+		</div>
+		<div class="product">
+			<img src="/2.jpg" alt="Reloj">
+			<h2>Reloj Inteligente</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus suscipit ratione numquam beatae sint pariatur, facilis deleniti.</p>
+			<button>Comprar</button>
+		</div>
+		<div class="product">
+			<img src="/3.jpg" alt="Mouse">
+			<h2>Mouse Logitech</h2>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, neque repudiandae. Dolorem necessitatibus provident neque iste aut esse iusto facilis.</p>
+			<button>Comprar</button>
+		</div>
+	</div>
+    <script>
+		const buttons = document.querySelectorAll("button");
+
+		buttons.forEach((button) => {
+			button.addEventListener("click", () => {
+				button.textContent = "Añadido al Carrito";
+			});
+		});
+	</script>
+</body>
+</html>
